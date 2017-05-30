@@ -1,8 +1,8 @@
 #!/bin/bash
 test $DEBUG && set -x && CMD='echo'
 
-if [ ! -a report.xml ]; then
-  echo 'report.xml is not mounted'
+if [ ! -a  $REPORT]; then
+  echo "$REPORT is not mounted"
   exit 1
 fi
 
@@ -11,9 +11,7 @@ fi
 DATE=`date +%Y%m%d%H%M`
 
 
-exit 0
-
-report -v \
+echo report -v \
 --testrail-plan-name "$TESTRAIL_PLAN_NAME" \
 --env-description "$TEST_GROUP" \
 --testrail-url  "$TESTRAIL_URL" \
@@ -23,7 +21,7 @@ report -v \
 --testrail-milestone "$TESTRAIL_MILESTONE" \
 --testrail-suite "$TESTRAIL_SUITE" \
 --testrail-name-template '{title}' \
---xunit-name-template '{classname}.{methodname}' verification.xml
+--xunit-name-template '{classname}.{methodname}' $REPORT
 
 
-test $DEBUG && /bin/bash
+#test $DEBUG && /bin/bash

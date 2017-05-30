@@ -21,7 +21,7 @@ ENV TESTRAIL_PASSWORD='password'
 ENV TESTRAIL_PROJECT='Mirantis Cloud Platform'
 ENV TESTRAIL_MILESTONE='MCP1.1'
 ENV TESTRAIL_SUITE='Tempest 15.0.0'
-
+ENV REPORT=/root/report.xml
 
 COPY entrypoint.sh /opt/
 
