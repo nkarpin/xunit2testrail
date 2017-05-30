@@ -1,14 +1,15 @@
 #!/bin/bash
 test $DEBUG && set -x && CMD='echo'
 
-if [ ! -a  $REPORT]; then
+if ! [ -a  $REPORT ]; then
   echo "$REPORT is not mounted"
   exit 1
 fi
 
-
-
 DATE=`date +%Y%m%d%H%M`
+
+if ! $TEST_GROUP ; then
+  TEST_GROUP="${SHORT_TEST_GROUP}.$DATE"
 
 
 echo report -v \
