@@ -6,6 +6,11 @@ if ! [ -a  $REPORT ]; then
   exit 1
 fi
 
+if ! [ -a  $PASS ]; then
+  echo "$PASS is not mounted"
+  exit 1
+fi
+
 DATE=`date +%Y%m%d`
 
 if ! [ $TEST_GROUP ]; then
@@ -18,7 +23,7 @@ $CMD report -v \
 --env-description "$TEST_GROUP" \
 --testrail-url  "$TESTRAIL_URL" \
 --testrail-user "$TESTRAIL_USER" \
---testrail-password "$TESTRAIL_PASSWORD" \
+--testrail-password "$PASS" \
 --testrail-project "$TESTRAIL_PROJECT" \
 --testrail-milestone "$TESTRAIL_MILESTONE" \
 --testrail-suite "$TESTRAIL_SUITE" \
