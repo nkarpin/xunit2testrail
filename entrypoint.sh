@@ -6,10 +6,11 @@ if ! [ -a  $REPORT ]; then
   exit 1
 fi
 
-DATE=`date +%Y%m%d%H%M`
+DATE=`date +%Y%m%d`
 
 if ! $TEST_GROUP ; then
   TEST_GROUP="${SHORT_TEST_GROUP}.$DATE"
+fi
 
 
 echo report -v \

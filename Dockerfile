@@ -13,8 +13,8 @@ WORKDIR /opt/
 
 RUN pip install xunit2testrail
 
-ENV TESTRAIL_PLAN_NAME="[Sprint-5]System"
-ENV SHORT_TEST_GROUP="mcp-11-newton-ovs"
+ENV TESTRAIL_PLAN_NAME="[MCP1.1]All-In-One"
+ENV SHORT_TEST_GROUP="All-In-One"
 ENV TESTRAIL_URL="https://mirantis.testrail.com"
 ENV TESTRAIL_USER='okosse@mirantis.com
 ENV TESTRAIL_PASSWORD='password'
