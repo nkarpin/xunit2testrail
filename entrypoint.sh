@@ -1,8 +1,10 @@
 #!/bin/bash
 test $DEBUG && set -x && CMD='echo'
 
+REPORT=/report/$REPORT
+
 if ! [ -a  $REPORT ]; then
-  echo "$REPORT is not mounted"
+  echo "$REPORT is not founded"
   exit 1
 fi
 
