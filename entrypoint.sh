@@ -6,8 +6,8 @@ if ! [ -a  $REPORT ]; then
   exit 1
 fi
 
-if ! [ -a  $PASS ]; then
-  echo "$PASS is not mounted"
+if ! [ $PASS ]; then
+  echo 'Password ($PASS) is not exported'
   exit 1
 fi
 
