@@ -13,7 +13,7 @@ if ! [ $TEST_GROUP ]; then
 fi
 
 
-echo report -v \
+$CMD report -v \
 --testrail-plan-name "$TESTRAIL_PLAN_NAME" \
 --env-description "$TEST_GROUP" \
 --testrail-url  "$TESTRAIL_URL" \
