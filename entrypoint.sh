@@ -8,7 +8,7 @@ fi
 
 DATE=`date +%Y%m%d`
 
-if ! $TEST_GROUP ; then
+if ! [ $TEST_GROUP ]; then
   TEST_GROUP="${SHORT_TEST_GROUP}.$DATE"
 fi
 
@@ -26,4 +26,4 @@ echo report -v \
 --xunit-name-template '{classname}.{methodname}' $REPORT
 
 
-#test $DEBUG && /bin/bash
+test $DEBUG && /bin/bash
