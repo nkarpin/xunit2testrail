@@ -1,5 +1,5 @@
 FROM python:2
-MAINTAINER Oleksandr Kosse <okosse@mirantis.com>
+LABEL maintainer="Oleksandr Kosse <okosse@mirantis.com>"
 
 RUN  apt-get update -qq &&  \
 apt-get install -q -y \
