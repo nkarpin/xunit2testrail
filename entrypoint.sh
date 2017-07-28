@@ -1,8 +1,6 @@
 #!/bin/bash
 test $DEBUG && set -x && CMD='echo'
 
-REPORT=/srv/$REPORT
-
 if ! [ -a  $REPORT ]; then
   echo "$REPORT is not founded"
   exit 1
