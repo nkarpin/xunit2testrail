@@ -1,7 +1,7 @@
 # xunit2testrail
 Docker container for upload xunit Tempest results to testrail
 
-Your xml file has to be mount to /srv/report.xml
+Your xml file has to be mounted to /srv/report.xml
 
 Example start the container:
 
