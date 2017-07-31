@@ -16,7 +16,7 @@ RUN pip install xunit2testrail
 ENV TESTRAIL_PLAN_NAME="[MCP1.1]All-In-One"
 ENV SHORT_TEST_GROUP="All-In-One"
 ENV TESTRAIL_URL="https://mirantis.testrail.com"
-ENV TESTRAIL_USER='okosse@mirantis.com
+ENV TESTRAIL_USER='okosse@mirantis.com'
 ENV TESTRAIL_PROJECT='Mirantis Cloud Platform'
 ENV TESTRAIL_MILESTONE='MCP1.1'
 ENV TESTRAIL_SUITE='Tempest 15.0.0'
