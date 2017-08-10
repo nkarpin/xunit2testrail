@@ -29,6 +29,3 @@ $CMD report -v \
 --testrail-suite "$TESTRAIL_SUITE" \
 --testrail-name-template '{title}' \
 --xunit-name-template '{classname}.{methodname}' $REPORT
-
-
-test $DEBUG && /bin/bash
